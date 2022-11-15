@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link type="text/css" rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
+</head>
+<body>
+    <div class="container">
+            <div class="card-info">
+                <img src="../resources/logo.png" alt="logo" id="logo-image">
+                <h1 class="text" id="SignUp">Sign up</h1>
+                <p class="text" id="login-to-use">Sign up to create a free account</p>
+            </div>
+        <form class="login-form">
+            <div class="form-item">
+                <p class="error" id="email-error">An account is already linked to this email</p>
+                <input id="email" type="email" placeholder="Enter Email" required autofocus>
+            </div>
+            <div class="form-item">
+                <p class="error" id="password-error">Passwords don't match</p>
+                <input type="password" placeholder="New Password" id="password" required>
+                <input type="password" placeholder="Enter Password Again" id="password2" required>
+            </div>
+            <button type="submit" id="submit">Sign up</button>
+            <p id="success">
+                Account created! Check your email for confirmation
+            </p>
+        </form>
+        <div class="login-footer">
+            Already have an account? <a href="../index.html">Login</a>
+        </div>
+    </div>
+    
+    <script type="module" src="../scripts/signup.js" async defer></script>
+</body>
+</html>
